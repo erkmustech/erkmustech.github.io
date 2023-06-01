@@ -5,159 +5,213 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Projects</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .body {
+      display: grid;
+      grid-template-rows: 100px minmax(400px, min-content) 50px;
+      grid-template-columns: 5rem [cal-start] repeat(2, minmax(250px, 1fr)) [cal-end] 5rem;
+      justify-content: center;
+      grid-gap: 50px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    .header {
+      grid-column: 1/-1;
+      background-color: #2a3a7d;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .header .logo-box {
+      flex: 1;
+      display: flex;
+      min-width: 250px;
+      height: 20vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header .logo-box img {
+      height: 12vh;
+    }
+
+    .header input {
+      height: 40px;
+      width: 200px;
+      padding: 5px auto;
+      margin-right: 10px;
+    }
+
+    .header .sign-in {
+      min-width: 250px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .header button {
+      width: 100px;
+      height: 40px;
+      color: #fff;
+      font-size: 16px;
+      background-color: orange;
+      padding: 5px auto;
+    }
+
+    main {
+      margin: 20px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      justify-items: center;
+    }
+
+    .project {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 1px 3px 1px #3333;
+      height:300px;
+      width:200px;
+      margin:20px 40px;
+    }
+
+    .project-img {
+      height:200px;
+      width: 150px;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .projects-des {
+      font-size: 12px;
+      margin:10px auto;
+      list-style: none;
+      color: #4a4646;
+      text-align: center;
+    }
+
+    .project-name{
+      background-color: #2a3a7d;
+      height: 50px;
+    }
+    h3{
+      color: #fff;
+      text-align: center;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .footer {
+      display: flex;
+      color: #7b7373;
+    }
+  </style>
 </head>
 
 <body>
   <div class="box header">
-    <div class="logo-box"><img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="logo"></div>
+    <div class="logo-box"><img src="https://i.postimg.cc/63v14SFn/Cloud-Bank-App.png" alt="" class="logo"></div>
     <div class="sign-in">
       <input type="email" placeholder="inter your email">
       <input type="password" placeholder="passord">
-      <button class="btn">login</button>
+      <button onclick="window.alert('Contact with Admin `erk.mustech@gmail.com`')" class="btn">login</button>
     </div>
   </div>
 
   <main class="main box">
-    
-    <div class="weeks week3"><a href="https://github.com/erkmustech/HYF-Module-HTMLCSSGIT/tree/main/Week1">
-  
-        <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="hyf-icon">
 
-      
-      <h3 class="weeks__heading">Week 1</h3>
-      <p class="weeks__text">
-        class contents
-      </p></a>
-    </div>
-
-    <div class="weeks week2"><a href="https://github.com/erkmustech/HYF-Module-HTMLCSSGIT/tree/main/Week2">
-    
-        <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="https://github.com/erkmustech/HYF-Module-HTMLCSSGIT/tree/main/Week2" class="hyf-icon">
-   
-      
-      <h3 class="weeks__heading">Week 2</h3>
-      <p class="weeks__text">
-        class contents
-      </p></a>
+    <div class="project"><a href="https://github.com/erkmustech/TO-DO-S" target="_blank">
+        <img src="https://i.postimg.cc/yNnHQWWG/Screenshot-2023-06-01-at-22-46-27.png" alt="" class="project-img">
+        <p onclick="window.alert('Contact with Admin `erk.mustech@gmail.com`')" class="projects-des">
+          NodeJs / Python Flak
+        </p>
+        <div class="project-name">
+          <h3 class="Projects__heading">TO-DO'S APP (Ansible | AWS)</h3>
+        </div>
+      </a>
     </div>
 
-    <div class="weeks week3">
-   
-        <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="hyf-icon">
-     
-      <h3 class="weeks__heading">Week 3</h3>
-      <p class="weeks__text">
-        class contents
+    <div class="project"><a href="https://github.com/erkmustech/TO-DO-S" target="_blank">
+      <img src="https://i.postimg.cc/yNnHQWWG/Screenshot-2023-06-01-at-22-46-27.png" alt="" class="project-img">
+      <p onclick="window.alert('Contact with Admin `erk.mustech@gmail.com`')" class="projects-des">
+        React / Python Flak
       </p>
-    </div>
+      <div class="project-name">
+        <h3 class="Projects__heading">MS PhoneBook APP (Docker |Kubernetes)</h3>
+      </div>
+    </a>
+  </div>
 
-    <div class="weeks week4">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 4</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
+  <div class="project"><a href="https://github.com/erkmustech/TO-DO-S" target="_blank">
+    <img src="https://i.postimg.cc/yNnHQWWG/Screenshot-2023-06-01-at-22-46-27.png" alt="" class="project-img">
+    <p onclick="window.alert('Contact with Admin `erk.mustech@gmail.com`')" class="projects-des">
+      Java / Tomcat
+    </p>
+    <div class="project-name">
+      <h3 class="Projects__heading">Jenkins CI/CD Pipeline</h3>
     </div>
+  </a>
+</div>
 
-    <div class="weeks week5">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 5</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-    <div class="weeks week5">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 6</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
+<div class="project"><a href="https://github.com/erkmustech/TO-DO-S" target="_blank">
+  <img src="https://i.postimg.cc/yNnHQWWG/Screenshot-2023-06-01-at-22-46-27.png" alt="" class="project-img">
+  <p onclick="window.alert('Contact with Admin `erk.mustech@gmail.com`')" class="projects-des">
+    Angular | Java SpringBoot
+  </p>
+  <div class="project-name">
+    <h3 class="Projects__heading"> Angular | Java SpringBoot</h3>
+  </div>
+</a>
+</div>
 
-    <div class="weeks week4">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 7</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-    <div class="weeks week5">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 8</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
+<div class="project"><a href="https://github.com/erkmustech/TO-DO-S" target="_blank">
+<img src="https://i.postimg.cc/yNnHQWWG/Screenshot-2023-06-01-at-22-46-27.png" alt="" class="project-img">
+<p onclick="window.alert('Contact with Admin `erk.mustech@gmail.com`')" class="projects-des">
+  NodeJs / Python Flak
+</p>
+<div class="project-name">
+  <h3 class="Projects__heading">IaC - Terraform Project</h3>
+</div>
+</a>
+</div>
 
-    <div class="weeks week4">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 9</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-    <div class="weeks week5">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 10</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-
-    <div class="weeks week4">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 11</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-    <div class="weeks week5">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 12</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-
-    <div class="weeks week4">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 13</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-    <div class="weeks week5">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 14</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-
-    <div class="weeks week4">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 15</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
-    <div class="weeks week5">
-      <img src="https://i.postimg.cc/pTPJTRDp/hyf2.png" alt="" class="class-icon">
-      <h3 class="weeks__heading">Week 16</h3>
-      <p class="weeks__text">
-        class contents
-      </p>
-    </div>
+<div class="project"><a href="https://github.com/erkmustech/TO-DO-S" target="_blank">
+<img src="https://i.postimg.cc/yNnHQWWG/Screenshot-2023-06-01-at-22-46-27.png" alt="" class="project-img">
+<p onclick="window.alert('Contact with Admin `erk.mustech@gmail.com`')" class="projects-des">
+Kubernets , Terraform 
+</p>
+<div class="project-name">
+<h3 class="Projects__heading">Prometheus & Grafa </h3>
+</div>
+</a>
+</div>
 
 
 
-      </p>
-    </div>
+
 
   </main>
 
-  <div class="box footer"> @erk.mustech 2021 </div>
+  <div class="footer"> @erk.mustech 2021 </div>
 
 </body>
 
